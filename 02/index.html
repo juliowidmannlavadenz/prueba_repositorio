@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Capítulo 2</title>
+    <meta charset="utf-8"/>
+</head>
+<body ng-controller="StudentController">
+{{student.name}} studies {{student.course}}
+<script type="text/javascript" src="../angular.min.js"></script>
+<script type="text/javascript">
+    angular.module('app',[]).controller('StudentController',function($scope){
+        $scope.student = {
+            name: "Miley Cyrus",
+            course: "AngularJS"
+        }
+    });
+</script>
+</body>
+</html>
